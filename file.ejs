@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/file.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <img class="img" id="img1" src="cloud-rain.png">
+    <img src="snow.png" class="img" id="img2">
+    <img src="sun.png" class="img" id="img3">
+    <img src="sun.png" class="img" id="img4">
+    <img src="snow.png" class="img" id="img5">
+    <img class="img" id="img6" src="cloud-rain.png">
+    <img class="img" id="img7" src="cloud-rain.png">
+    <img class="img" id="img8" src="snow.png">
+    <img class="img" id="img9" src="sun.png">
+
+    <div>
+    <table cellspacing="2rem">
+      <tr>
+      <th colspan="3"><h3><%=placeName%></h3></th>
+    </tr>
+      <tr>
+        <td>
+          <h4>Temperature</h4><br>
+          <h4 class="t"><%=temp%> C</h4>
+        </td>
+        <td>
+          <h4>Real feel</h4><br>
+          <h4 class="f"><%=feel%></h4>
+        </td>
+        <td rowspan="2">
+          <h4>Weather</h4><br>
+          <h4 class="w"><%=weather%></h4>
+          <img src=<%=imgurl%>>
+        </td>
+
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h4>Humidity</h4><br>
+          <h4 class="h"><%=humid%></h4>
+        </td>
+      </tr>
+
+    </table>
+    <form action="/" method="post">
+      <label for="city">Enter the city Name</label>
+      <input type="text" id="city" name="cityName">
+      <button type="submit" class="submitBtn">Go</button>
+
+    </form>
+    <button class="speak">Talk</button>
+  </div>
+
+  <script src="javascript/frontend.js"></script>
+  </body>
+</html>

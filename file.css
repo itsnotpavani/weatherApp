@@ -1,0 +1,106 @@
+*{margin:0;
+  padding:0;}
+body{display:flex;
+     justify-content: center;
+     align-items: center;
+     width:200vh;
+     height:110vh;
+     background: linear-gradient(to right top,#94DAFF,#B983FF);
+     font-family: Poppins;
+     color:grey;
+     }
+div{width:60%;
+    height:90vh;
+    border-radius: 2rem;
+    background:linear-gradient(to left bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.3));
+    backdrop-filter:blur(2rem);
+    z-index:2;
+    min-height:50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+   }
+table,th,td{
+
+  text-align: center;
+
+}
+table{border-spacing: 1rem;
+margin-bottom: 1rem;}
+th,td{border-radius: 2rem;
+
+    padding:2.5rem;
+    background:linear-gradient(to left bottom,rgba(255,255,255,0.6),rgba(255,255,255,0.4));
+   }
+   .img{width:13rem;
+      position:absolute;}
+#img1{
+  bottom:2rem;
+  left:10rem;
+}
+#img3{
+  top:1rem;
+  left:13rem;
+}
+#img2{top:10rem;
+      right:-1rem;}
+#img4{bottom:13rem;
+      right:20rem;}
+#img5{
+  bottom:20rem;
+  left:2rem;
+  width:150px;
+}
+#img6{
+  bottom:8rem;
+  right:5rem;
+  width:100px;
+}
+#img7{top:1rem;
+      left:1rem;
+      width:100px;}
+#img8{
+  top:1rem;
+  left:35rem;
+}
+#img9{width:100px;
+      right:13rem;
+      top:2rem;}
+.submitBtn{
+  text-decoration: none;
+  border:none;
+  background-color:#94DAFF;
+  padding:1rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+}
+button,td,th,input[type=text]{box-shadow: 8px 5px 10px rgba(0,0,0,0.1);}
+.speak{border:none;
+       text-decoration:none;
+       border-radius:50%;
+       font-size:15px;
+       background-color:#94DAFF;
+       padding:1rem;
+       color:black;
+       position:absolute;
+       left:86%;
+       bottom:7%;
+       }
+button:hover{background-color:#B983FF;
+             color:white;
+             transform:scale(1.2,1.2);
+             transition:transform 1s ease;}
+.clicked{background-color: #94DAFF;
+
+         }
+
+input[type=text]{
+  border:none;
+  border-radius:2rem;
+  background:linear-gradient(to left bottom,rgba(255,255,255,0.6),rgba(255,255,255,0.4));
+  padding-top:1rem;
+  padding-bottom:1rem;
+  width:20rem;
+}
